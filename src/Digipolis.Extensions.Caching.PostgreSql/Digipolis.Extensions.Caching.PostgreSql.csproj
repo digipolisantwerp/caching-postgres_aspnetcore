@@ -6,12 +6,14 @@
     <Authors>Jimmy Hannon</Authors>
     <TargetFramework>netstandard1.6</TargetFramework>
     <AssemblyName>Digipolis.Extensions.Caching.PostgreSql</AssemblyName>
-    <PackageId>Digipolis.Extensions.Caching.Postgres</PackageId>
+    <PackageId>Digipolis.Extensions.Caching.PostgreSql</PackageId>
     <PackageTags>Toolbox;Extensions.Caching.Postgres</PackageTags>
     <RepositoryType>git</RepositoryType>
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
     <RootNamespace>Digipolis.Extensions.Caching.PostgreSql</RootNamespace>
+    <Product>Digipolis.Extensions.Caching.PostgreSql</Product>
+    <Company>Digipolis</Company>
   </PropertyGroup>
 
   <ItemGroup>
