@@ -25,13 +25,22 @@ In Visual Studio you can also use the NuGet Package Manager to do this.
 
 ## Usage
 
-In order to use the PostgreSql distributed cache you need to 
+In order to use the PostgreSql distributed cache you need to register the service in the **ConfigureServices** method of the **Startup**.  
+
+```
+  services.AddDistributedPostgreSqlCache(options =>
+  {
+      options.ConnectionString = "<enter the connection string here>";
+      options.SchemaName = "<enter the schame name here>";
+      options.TableName = "<enter the table name here>";
+  });
+```
 
 ## Testing
 
 All tests inside PostgreSqlCacheWithDatabaseTest.cs are tests that execute against a running database.
 
-You can use this docker commeand to spin up a database:
+You can use this docker command to spin up a database:
 
 ```
 	docker run --name pgsql_dist_caching_test_db -p 5432:5432/tcp -e POSTGRES_PASSWORD=postgres postgres
