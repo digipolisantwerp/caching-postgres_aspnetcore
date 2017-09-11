@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Digipolis.Extensions.Caching.Postgres\Digipolis.Extensions.Caching.PostgreSql.csproj" />
+    <ProjectReference Include="..\..\src\Digipolis.Extensions.Caching.PostgreSql\Digipolis.Extensions.Caching.PostgreSql.csproj" />
   </ItemGroup>
 
 </Project>

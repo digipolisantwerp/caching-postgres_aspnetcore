@@ -36,6 +36,12 @@ In order to use the PostgreSql distributed cache you need to register the servic
   });
 ```
 
+or you can use a configuration section
+
+```
+services.AddDistributedPostgreSqlCache(configuration.GetSection("<configuration section name>"));
+```
+
 ## Testing
 
 All tests inside PostgreSqlCacheWithDatabaseTest.cs are tests that execute against a running database.
@@ -43,7 +49,7 @@ All tests inside PostgreSqlCacheWithDatabaseTest.cs are tests that execute again
 You can use this docker command to spin up a database:
 
 ```
-	docker run --name pgsql_dist_caching_test_db -p 5432:5432/tcp -e POSTGRES_PASSWORD=postgres postgres
+	docker run --name pgsql_dist_caching_test_db --rm -d -p 5432:5432/tcp -e POSTGRES_PASSWORD=postgres postgres
 ```
 
 

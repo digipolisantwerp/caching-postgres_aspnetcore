@@ -19,7 +19,7 @@ namespace Digipolis.Extensions.Caching.PostgreSql.Tests
     // Be sure to create database and table with the correct names, see below in constructor for the names.
     // You can use the TestDb_Setup.sql script.
     // Start a postgres container with:
-    //   docker run --name pgsql_dist_caching_test_db -p 5432:5432/tcp -e POSTGRES_PASSWORD=postgres postgres
+    //   docker run --name pgsql_dist_caching_test_db --rm -d -p 5432:5432/tcp -e POSTGRES_PASSWORD=postgres postgres
     public class PostgreSqlCacheWithDatabaseTest
     {
         private const string ConnectionStringKey = "ConnectionString";

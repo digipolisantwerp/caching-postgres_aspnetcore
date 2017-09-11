@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Digipolis.Extensions.Caching.Postgres
 {
     /// <summary>
-    /// Distributed cache implementation using Microsoft SQL Server database.
+    /// Distributed cache implementation using PostgreSQL database.
     /// </summary>
     public class PostgreSqlCache : IDistributedCache
     {
